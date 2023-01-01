@@ -1,0 +1,3250 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shiva Way</title>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" type="text/css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/persianumber.min.js"></script>
+    <script src="js/aos.js"></script>
+    <link rel="stylesheet" href="css/aos.css">
+</head>
+<body>
+
+<style>
+
+    /*<!------------------global-style---------------->*/
+    body {
+        margin: 0;
+        background: url('images/bg_body.jpg') repeat 0 0 transparent;
+    }
+
+    @font-face {
+        font-family: 'iransans';
+    url('fonts/IRANSansX-Regular.woff2') format('woff2');
+    url('fonts/IRANSansX-Regular.woff') format('woff');
+    url('fonts/IRANSansWeb.ttf')  format('truetype');
+
+    }
+
+    * {
+        font-family: iransans;
+        direction: rtl;
+        text-align: right;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none
+    }
+
+    p {
+        margin: 0
+    }
+
+    .flex-display {
+        display: flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: -o-flex;
+    }
+
+    .flex-wrap {
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    }
+
+    .align-items-center {
+        align-items: center;
+        -webkit-align-items: center;
+    }
+
+    .justify-content-s-bet {
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+
+    }
+
+    .justify-content-s-ar {
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around;
+
+    }
+
+    .transition {
+        -webkit-transition: all ease .2s;
+        -moz-transition: all ease .2s;
+        -ms-transition: all ease .2s;
+        -o-transition: all ease .2s;
+        transition: all ease .2s;
+    }
+
+    .border-radius-100 {
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+    }
+
+    .border-radius-10px {
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+    }
+
+    /*<!----------x--------global-style----------x------>*/
+
+
+</style>
+
+
+<style>
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 5000;
+        top: 0;
+        right: 0;
+        background: #8E24AA;
+        padding: 0 20px 0 10px;
+        -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, .6);
+        -moz-box-shadow: 0 0 3px 1px rgba(0, 0, 0, .6);
+        -o-box-shadow: 0 0 3px 1px rgba(0, 0, 0, .6);
+        box-shadow: 0 0 3px 1px rgba(0, 0, 0, .6);
+
+    }
+
+    #header-bar {
+        margin: auto;
+    }
+
+    header .nav-left-side {
+        color: #fff;
+        height: 60px;
+        line-height: 60px;
+        float: left;
+
+    }
+
+    header .nav-left-side ul {
+        font-size: .95rem;
+    }
+
+    header .nav-left-side ul .nav-left-delete-li a {
+        margin: 16px 2px 0 2px;
+        position: relative;
+        height: 30px;
+        padding: 0 35px 0 10px;
+        color: #fff;
+        display: block;
+        border: 1px solid #fff;
+
+    }
+
+    header .nav-left-side ul .nav-left-delete-li a:hover {
+        border: 1px solid rgba(255, 255, 255, .6);
+    }
+
+    header .nav-left-side ul .nav-left-delete-li a::after {
+        content: '';
+        position: absolute;
+        background: url("images/nav-icons.png") no-repeat -1px 1px;
+        width: 19px;
+        height: 18px;
+        top: 4px;
+        right: 10px;
+    }
+
+    header .nav-left-side ul .nav-left-delete-li-2 a::after {
+        background-position: -1px -47px;
+    }
+
+    .bubbles {
+        display: inline-block;
+        position: relative;
+        margin-right: 20px;
+        padding: 0 10px;
+    }
+
+    .individual-bubble {
+        position: absolute;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+        bottom: 10px;
+        background-color: #BBDEFB;
+        z-index: 1;
+        opacity: .7;
+    }
+
+    header .logo-img {
+        width: 140px;
+        margin-top: 4px;
+        position: relative;
+        z-index: 100;
+    }
+
+    header nav {
+        float: right;
+    }
+
+    header nav ul {
+        font-size: .95rem;
+    }
+
+    header nav ul li a {
+        position: relative;
+        height: 60px;
+        line-height: 60px;
+        padding: 0 37px 0 9px;
+        color: #fff;
+        display: block;
+    }
+
+    header nav ul li a::after {
+        content: '';
+        position: absolute;
+        background: url("images/nav-icons.png") no-repeat 0 1px;
+        width: 19px;
+        height: 19px;
+        top: 18px;
+        right: 10px;
+    }
+
+    header nav ul .nav-li-2 a::after {
+        background-position: -1px -45px;
+    }
+
+    header nav ul .nav-li-3 a::after {
+        background-position: 0 -69px;
+    }
+
+    header nav ul .nav-li-4 a::after {
+        background-position: 0 -21px;
+    }
+
+    header nav ul .nav-li-5 a::after {
+        background-position: -3px -94px;
+    }
+
+    header nav ul li a:hover {
+        color: #fff;
+        background: #FF6F00;
+    }
+
+    .menu-open {
+        float: right;
+        line-height: 60px;
+        cursor: pointer;
+        width: 23px;
+        display: none;
+    }
+
+    .menu-open svg {
+        fill: #ffffff;
+    }
+
+    .menu-close {
+        padding: 6px 7px 6px 6px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        background: #FF8F00;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 28px;
+        height: 28px;
+        display: none;
+        cursor: pointer;
+    }
+
+    .menu-close img {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .delete-li {
+        display: none
+    }
+
+    header .add-to-cart-bag a {
+        display: block;
+        margin: 16px 2px 0 4px;
+        position: relative;
+        height: 30px;
+        width: 30px;
+    }
+
+    header .add-to-cart-bag a span {
+        position: absolute;
+        display: inline-block;
+        top: 9px;
+        right: -6px;
+        padding: 1px 1px 1px 0;
+        width: 21px;
+        height: 21px;
+        text-align: center;
+        line-height: 19px;
+        background: #FFA000;
+        z-index: 30;
+        color: #ffffff;
+    }
+
+    header .add-to-cart-bag a img {
+        width: 28px;
+        position: absolute;
+        bottom: 0;
+        right: 0
+    }
+
+
+</style>
+
+
+<header>
+
+    <div id="header-bar">
+        <div class="nav-left-side flex-display">
+            <ul class="flex-display">
+                <li class="add-to-cart-bag">
+                    <a href="#" title="سبد خرید">
+                       <span class="border-radius-100">
+                           0
+                       </span>
+
+                        <img src="images/bag-fill.svg">
+                    </a>
+                </li>
+                <li class="nav-left-delete-li"><a class="transition" href="#" style="line-height: 23px">ورود</a></li>
+                <li class="nav-left-delete-li nav-left-delete-li-2 "><a class="transition" href="#"
+                                                                        style="line-height: 27px">ثبت نام</a></li>
+            </ul>
+
+            <div class="logo">
+                <div class="bubbles">
+                    <img class="logo-img" src="images/logo-mtr.svg">
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="flex-display">
+                <li class="delete-li nav-li-1"><a class="transition" href="#">ورود</a></li>
+                <li class="delete-li nav-li-2"><a class="transition" href="#">عضویت</a></li>
+                <li class="nav-li-3"><a class="transition" href="#">صفحه اصلی</a></li>
+                <li class="nav-li-4"><a class="transition" href="#">دوره های آموزشی</a></li>
+                <li class="nav-li-5"><a class="transition" href="#">ارتباط با ما</a></li>
+            </ul>
+
+            <div class="menu-close">
+                <img src="images/close-log.svg">
+            </div>
+        </nav>
+
+        <div class="menu-open">
+            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                 data-svg="navbar-toggle-icon">
+                <rect y="9" width="20" height="2"></rect>
+                <rect y="3" width="20" height="2"></rect>
+                <rect y="15" width="20" height="2"></rect>
+            </svg>
+        </div>
+    </div>
+
+</header>
+
+
+<style>
+
+    #main {
+        max-width: 78.125rem;
+        background-color: #fff;
+        overflow: hidden;
+        margin: auto;
+        position: relative;
+        box-shadow: 0 0 .375rem .0625rem rgba(0, 0, 0, .5);
+    }
+
+    #hero-part {
+        width: 100%;
+        padding-top: 92px;
+        background: #29b6f6;
+    }
+
+    #hero-top {
+        width: 100%;
+        height: 18.75rem;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #hero-image {
+        height: 100%;
+        position: relative;
+        left: 116.25rem;
+        -webkit-animation: moving 25s linear infinite;
+        -o-animation: moving 25s linear infinite;
+        -moz-animation: moving 25s linear infinite;
+        animation: moving 25s linear infinite;
+    }
+
+    #airplane-image {
+        width: 15rem;
+        position: absolute;
+        z-index: 100;
+        right: 0;
+        left: 0;
+        margin: auto;
+        -webkit-animation: airplane 1500ms ease infinite alternate;
+        -o-animation: airplane 1500ms ease infinite alternate;
+        -moz-animation: airplane 1500ms ease infinite alternate;
+        animation: airplane 1500ms ease infinite alternate;
+
+    }
+
+    @keyframes airplane {
+        from {
+            top: 2.0625rem;
+        }
+        to {
+            top: 10.8125rem;
+        }
+    }
+
+    @-moz-keyframes airplane {
+        from {
+            top: 2.0625rem;
+        }
+        to {
+            top: 10.8125rem;
+        }
+    }
+
+    @-webkit-keyframes airplane {
+        from {
+            top: 2.0625rem;
+        }
+        to {
+            top: 10.8125rem;
+        }
+    }
+
+    @-o-keyframes airplane {
+        from {
+            top: 2.0625rem;
+        }
+        to {
+            top: 10.8125rem;
+        }
+    }
+
+    @-ms-keyframes airplane {
+        from {
+            top: 2.0625rem;
+        }
+        to {
+            top: 10.8125rem;
+        }
+    }
+
+    @keyframes moving {
+        from {
+            left: 116.25rem;
+        }
+        to {
+            left: -23.125rem;
+        }
+    }
+
+    @-moz-keyframes moving {
+        from {
+            left: 116.25rem;
+        }
+        to {
+            left: -23.125rem;
+        }
+    }
+
+    @-webkit-keyframes moving {
+        from {
+            left: 116.25rem;
+        }
+        to {
+            left: -23.125rem;
+        }
+    }
+
+    @-o-keyframes moving {
+        from {
+            left: 116.25rem;
+        }
+        to {
+            left: -23.125rem;
+        }
+    }
+
+    @-ms-keyframes moving {
+        from {
+            left: 116.25rem;
+        }
+        to {
+            left: -23.125rem;
+        }
+    }
+
+    #hero-bottom {
+        width: 100%;
+        position: relative;
+        height: 11.625rem;
+        border-bottom: .16rem solid #546E7A;
+    }
+
+    #hero-title {
+        width: 100%;
+        height: 8.125rem;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+
+    #orange-button {
+        text-align: center;
+        color: #ffffff;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 1rem 1.4rem;
+        text-shadow: 0 0 .1875rem #000;
+        background: #FFA000;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+        -webkit-box-shadow: 0 0 .375rem .0625rem rgba(0, 0, 0, .2);
+        -moz-box-shadow: 0 0 .375rem .0625rem rgba(0, 0, 0, .2);
+        -o-box-shadow: 0 0 .375rem .0625rem rgba(0, 0, 0, .2);
+        box-shadow: 0 0 .375rem .0625rem rgba(0, 0, 0, .2);
+
+    }
+
+    #lamp-place {
+        width: 100%;
+        height: 112px;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        position: absolute;
+        bottom: -57px;
+    }
+
+    .lamp {
+        width: 1.75rem;
+    }
+
+    .lamp:nth-child(odd) {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+        align-self: flex-start;
+        -webkit-align-self: flex-start;
+    }
+
+    .lamp:nth-child(even) {
+        align-self: flex-end;
+        -webkit-align-self: flex-end;
+    }
+
+    .cls-2 {
+        -webkit-animation: shine 1100ms ease-in-out infinite alternate;
+        -o-animation: shine 1100ms ease-in-out infinite alternate;
+        -moz-animation: shine 1100ms ease-in-out infinite alternate;
+        animation: shine 1100ms ease-in-out infinite alternate;
+    }
+
+    @keyframes shine {
+        from {
+            fill: #cccccc;
+
+        }
+        to {
+            fill: #FFD600;
+        }
+    }
+
+    @-moz-keyframes shine {
+        from {
+            fill: #cccccc;
+
+        }
+        to {
+            fill: #FFD600;
+        }
+    }
+
+    @-webkit-keyframes shine {
+        from {
+            fill: #cccccc;
+
+        }
+        to {
+            fill: #FFD600;
+        }
+    }
+
+    @-o-keyframes shine {
+        from {
+            fill: #cccccc;
+
+        }
+        to {
+            fill: #FFD600;
+        }
+    }
+
+    @-ms-keyframes shine {
+        from {
+            fill: #cccccc;
+
+        }
+        to {
+            fill: #FFD600;
+        }
+    }
+
+    @media only screen and (max-width: 1250px) {
+        #main {
+
+            box-shadow: none;
+        }
+
+    }
+
+    @media only screen and (max-width: 600px) {
+        #orange-button {
+            font-size: 18px;
+            font-weight: 600;
+            padding: 1rem 1.2rem;
+            text-shadow: 0 0 2px #000;
+        }
+
+        #lamp-place .lamp:nth-child(1), #lamp-place .lamp:nth-child(2) {
+            display: none
+        }
+
+    }
+
+    @media only screen and (max-width: 400px) {
+
+        .change-burger-icon {
+            width: 11px;
+            height: 11px;
+        }
+
+        #orange-button {
+            font-size: 17px;
+            padding: .8rem 0;
+            width: 100%;;
+            border-radius: unset;
+        }
+
+        #hero-bottom {
+            height: 170px;
+        }
+
+        #hero-title {
+            height: 120px;
+        }
+
+        #lamp-place {
+            height: 95px;
+            bottom: -49px;
+        }
+
+        .lamp {
+            width: 24px;
+        }
+
+        #lamp-place .lamp:nth-child(3), #lamp-place .lamp:nth-child(4) {
+            display: none
+        }
+
+    }
+
+    @media only screen and (max-width: 290px) {
+
+        #orange-button {
+            font-size: 16px;
+            padding: .6rem .3rem;
+            text-shadow: 0 0 1px #000;
+            line-height: 26px;
+        }
+
+        #hero-bottom {
+            height: 147px;
+        }
+
+        #hero-title {
+            height: 100px;
+        }
+
+    }
+
+    /*<!----------x--------hero-style----------x------>*/
+
+
+</style>
+
+
+<div id="main">
+
+
+    <!-------------------hero----------------->
+
+    <div id="hero-part">
+        <div class="flex-display" id="hero-top">
+            <img id="airplane-image" src="images/airplane.svg" alt="airplane-image">
+            <img id="hero-image" src="images/hero-image.png" alt="hero-image">
+        </div>
+
+        <div id="hero-bottom">
+            <div id="hero-title" class="flex-display">
+                <div id="orange-button">
+                    یادگیری 504 واژه ضروری زبان انگلیسی
+                </div>
+            </div>
+
+            <div id="lamp-place" class="flex-display">
+                <div class="lamp">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 138.77">
+                        <defs>
+                            <style>.cls-1 {
+                                fill: #546e7a;
+                            }
+
+                            .cls-2 {
+                                fill: #fec007;
+                            }
+
+                            .cls-3 {
+                                fill: #fe9700;
+                            }
+
+                            .cls-4 {
+                                fill: #eee;
+                            }
+
+                            .cls-5 {
+                                fill: #ba68c8;
+                            }
+
+                            .cls-6 {
+                                fill: #ab47bc;
+                            }</style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <g id="Layer_2-2" data-name="Layer 2">
+                                    <g id="Layer_1-2-2" data-name="Layer 1-2">
+                                        <rect class="cls-1" x="33" width="4" height="20"/>
+                                        <path class="cls-2"
+                                              d="M70,103.75A35,35,0,1,1,7.09,82.65,55,55,0,0,0,18.23,53.79c.12-1.35.15-2.67.15-4v-8.3H51.6v7.78a39.91,39.91,0,0,0,.17,4.51A53.9,53.9,0,0,0,62.68,82.36,34.87,34.87,0,0,1,70,103.75Z"/>
+                                        <path class="cls-3" d="M51.8,53.77h0v-.35A1.37,1.37,0,0,0,51.8,53.77Z"/>
+                                        <path class="cls-4"
+                                              d="M26.85,128a2.1,2.1,0,0,1-.61-.09c-14.06-4-16.68-18.2-16.79-18.81a2.2,2.2,0,0,1,1.78-2.52,2.18,2.18,0,0,1,2.52,1.76v0c.09.51,2.3,12.08,13.7,15.36a2.18,2.18,0,0,1,1.49,2.7h0A2.21,2.21,0,0,1,26.85,128Z"/>
+                                        <path class="cls-5"
+                                              d="M53.92,50H19a2.55,2.55,0,0,1-2.55-2.55,2.8,2.8,0,0,1,.08-.64l.86-3.36,5.14-19.9,1.21-4.62A2.54,2.54,0,0,1,26.18,17H46.71a2.52,2.52,0,0,1,2.47,1.92l1.21,4.62,5.14,19.9.86,3.36a2.56,2.56,0,0,1-1.84,3.12A2.65,2.65,0,0,1,53.92,50Z"/>
+                                        <polygon class="cls-6"
+                                                 points="55.5 43.43 17.37 43.43 22.51 23.53 50.36 23.53 55.5 43.43"/>
+                                        <path class="cls-5"
+                                              d="M55.81,39.15H17.05a2.77,2.77,0,0,1-2.78-2.78v-5.8a2.79,2.79,0,0,1,2.78-2.79H55.81a2.79,2.79,0,0,1,2.79,2.79h0v5.8a2.77,2.77,0,0,1-2.74,2.78Z"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="lamp">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 138.77">
+                        <defs>
+                            <style>.cls-1 {
+                                fill: #546e7a;
+                            }
+
+                            .cls-2 {
+                                fill: #fec007;
+                            }
+
+                            .cls-3 {
+                                fill: #fe9700;
+                            }
+
+                            .cls-4 {
+                                fill: #eee;
+                            }
+
+                            .cls-5 {
+                                fill: #ba68c8;
+                            }
+
+                            .cls-6 {
+                                fill: #ab47bc;
+                            }</style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <g id="Layer_2-2" data-name="Layer 2">
+                                    <g id="Layer_1-2-2" data-name="Layer 1-2">
+                                        <rect class="cls-1" x="33" width="4" height="20"/>
+                                        <path class="cls-2"
+                                              d="M70,103.75A35,35,0,1,1,7.09,82.65,55,55,0,0,0,18.23,53.79c.12-1.35.15-2.67.15-4v-8.3H51.6v7.78a39.91,39.91,0,0,0,.17,4.51A53.9,53.9,0,0,0,62.68,82.36,34.87,34.87,0,0,1,70,103.75Z"/>
+                                        <path class="cls-3" d="M51.8,53.77h0v-.35A1.37,1.37,0,0,0,51.8,53.77Z"/>
+                                        <path class="cls-4"
+                                              d="M26.85,128a2.1,2.1,0,0,1-.61-.09c-14.06-4-16.68-18.2-16.79-18.81a2.2,2.2,0,0,1,1.78-2.52,2.18,2.18,0,0,1,2.52,1.76v0c.09.51,2.3,12.08,13.7,15.36a2.18,2.18,0,0,1,1.49,2.7h0A2.21,2.21,0,0,1,26.85,128Z"/>
+                                        <path class="cls-5"
+                                              d="M53.92,50H19a2.55,2.55,0,0,1-2.55-2.55,2.8,2.8,0,0,1,.08-.64l.86-3.36,5.14-19.9,1.21-4.62A2.54,2.54,0,0,1,26.18,17H46.71a2.52,2.52,0,0,1,2.47,1.92l1.21,4.62,5.14,19.9.86,3.36a2.56,2.56,0,0,1-1.84,3.12A2.65,2.65,0,0,1,53.92,50Z"/>
+                                        <polygon class="cls-6"
+                                                 points="55.5 43.43 17.37 43.43 22.51 23.53 50.36 23.53 55.5 43.43"/>
+                                        <path class="cls-5"
+                                              d="M55.81,39.15H17.05a2.77,2.77,0,0,1-2.78-2.78v-5.8a2.79,2.79,0,0,1,2.78-2.79H55.81a2.79,2.79,0,0,1,2.79,2.79h0v5.8a2.77,2.77,0,0,1-2.74,2.78Z"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="lamp">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 138.77">
+                        <defs>
+                            <style>.cls-1 {
+                                fill: #546e7a;
+                            }
+
+                            .cls-2 {
+                                fill: #fec007;
+                            }
+
+                            .cls-3 {
+                                fill: #fe9700;
+                            }
+
+                            .cls-4 {
+                                fill: #eee;
+                            }
+
+                            .cls-5 {
+                                fill: #ba68c8;
+                            }
+
+                            .cls-6 {
+                                fill: #ab47bc;
+                            }</style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <g id="Layer_2-2" data-name="Layer 2">
+                                    <g id="Layer_1-2-2" data-name="Layer 1-2">
+                                        <rect class="cls-1" x="33" width="4" height="20"/>
+                                        <path class="cls-2"
+                                              d="M70,103.75A35,35,0,1,1,7.09,82.65,55,55,0,0,0,18.23,53.79c.12-1.35.15-2.67.15-4v-8.3H51.6v7.78a39.91,39.91,0,0,0,.17,4.51A53.9,53.9,0,0,0,62.68,82.36,34.87,34.87,0,0,1,70,103.75Z"/>
+                                        <path class="cls-3" d="M51.8,53.77h0v-.35A1.37,1.37,0,0,0,51.8,53.77Z"/>
+                                        <path class="cls-4"
+                                              d="M26.85,128a2.1,2.1,0,0,1-.61-.09c-14.06-4-16.68-18.2-16.79-18.81a2.2,2.2,0,0,1,1.78-2.52,2.18,2.18,0,0,1,2.52,1.76v0c.09.51,2.3,12.08,13.7,15.36a2.18,2.18,0,0,1,1.49,2.7h0A2.21,2.21,0,0,1,26.85,128Z"/>
+                                        <path class="cls-5"
+                                              d="M53.92,50H19a2.55,2.55,0,0,1-2.55-2.55,2.8,2.8,0,0,1,.08-.64l.86-3.36,5.14-19.9,1.21-4.62A2.54,2.54,0,0,1,26.18,17H46.71a2.52,2.52,0,0,1,2.47,1.92l1.21,4.62,5.14,19.9.86,3.36a2.56,2.56,0,0,1-1.84,3.12A2.65,2.65,0,0,1,53.92,50Z"/>
+                                        <polygon class="cls-6"
+                                                 points="55.5 43.43 17.37 43.43 22.51 23.53 50.36 23.53 55.5 43.43"/>
+                                        <path class="cls-5"
+                                              d="M55.81,39.15H17.05a2.77,2.77,0,0,1-2.78-2.78v-5.8a2.79,2.79,0,0,1,2.78-2.79H55.81a2.79,2.79,0,0,1,2.79,2.79h0v5.8a2.77,2.77,0,0,1-2.74,2.78Z"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="lamp">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 138.77">
+                        <defs>
+                            <style>.cls-1 {
+                                fill: #546e7a;
+                            }
+
+                            .cls-2 {
+                                fill: #fec007;
+                            }
+
+                            .cls-3 {
+                                fill: #fe9700;
+                            }
+
+                            .cls-4 {
+                                fill: #eee;
+                            }
+
+                            .cls-5 {
+                                fill: #ba68c8;
+                            }
+
+                            .cls-6 {
+                                fill: #ab47bc;
+                            }</style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <g id="Layer_2-2" data-name="Layer 2">
+                                    <g id="Layer_1-2-2" data-name="Layer 1-2">
+                                        <rect class="cls-1" x="33" width="4" height="20"/>
+                                        <path class="cls-2"
+                                              d="M70,103.75A35,35,0,1,1,7.09,82.65,55,55,0,0,0,18.23,53.79c.12-1.35.15-2.67.15-4v-8.3H51.6v7.78a39.91,39.91,0,0,0,.17,4.51A53.9,53.9,0,0,0,62.68,82.36,34.87,34.87,0,0,1,70,103.75Z"/>
+                                        <path class="cls-3" d="M51.8,53.77h0v-.35A1.37,1.37,0,0,0,51.8,53.77Z"/>
+                                        <path class="cls-4"
+                                              d="M26.85,128a2.1,2.1,0,0,1-.61-.09c-14.06-4-16.68-18.2-16.79-18.81a2.2,2.2,0,0,1,1.78-2.52,2.18,2.18,0,0,1,2.52,1.76v0c.09.51,2.3,12.08,13.7,15.36a2.18,2.18,0,0,1,1.49,2.7h0A2.21,2.21,0,0,1,26.85,128Z"/>
+                                        <path class="cls-5"
+                                              d="M53.92,50H19a2.55,2.55,0,0,1-2.55-2.55,2.8,2.8,0,0,1,.08-.64l.86-3.36,5.14-19.9,1.21-4.62A2.54,2.54,0,0,1,26.18,17H46.71a2.52,2.52,0,0,1,2.47,1.92l1.21,4.62,5.14,19.9.86,3.36a2.56,2.56,0,0,1-1.84,3.12A2.65,2.65,0,0,1,53.92,50Z"/>
+                                        <polygon class="cls-6"
+                                                 points="55.5 43.43 17.37 43.43 22.51 23.53 50.36 23.53 55.5 43.43"/>
+                                        <path class="cls-5"
+                                              d="M55.81,39.15H17.05a2.77,2.77,0,0,1-2.78-2.78v-5.8a2.79,2.79,0,0,1,2.78-2.79H55.81a2.79,2.79,0,0,1,2.79,2.79h0v5.8a2.77,2.77,0,0,1-2.74,2.78Z"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="lamp">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 138.77">
+                        <defs>
+                            <style>.cls-1 {
+                                fill: #546e7a;
+                            }
+
+                            .cls-2 {
+                                fill: #fec007;
+                            }
+
+                            .cls-3 {
+                                fill: #fe9700;
+                            }
+
+                            .cls-4 {
+                                fill: #eee;
+                            }
+
+                            .cls-5 {
+                                fill: #ba68c8;
+                            }
+
+                            .cls-6 {
+                                fill: #ab47bc;
+                            }</style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <g id="Layer_2-2" data-name="Layer 2">
+                                    <g id="Layer_1-2-2" data-name="Layer 1-2">
+                                        <rect class="cls-1" x="33" width="4" height="20"/>
+                                        <path class="cls-2"
+                                              d="M70,103.75A35,35,0,1,1,7.09,82.65,55,55,0,0,0,18.23,53.79c.12-1.35.15-2.67.15-4v-8.3H51.6v7.78a39.91,39.91,0,0,0,.17,4.51A53.9,53.9,0,0,0,62.68,82.36,34.87,34.87,0,0,1,70,103.75Z"/>
+                                        <path class="cls-3" d="M51.8,53.77h0v-.35A1.37,1.37,0,0,0,51.8,53.77Z"/>
+                                        <path class="cls-4"
+                                              d="M26.85,128a2.1,2.1,0,0,1-.61-.09c-14.06-4-16.68-18.2-16.79-18.81a2.2,2.2,0,0,1,1.78-2.52,2.18,2.18,0,0,1,2.52,1.76v0c.09.51,2.3,12.08,13.7,15.36a2.18,2.18,0,0,1,1.49,2.7h0A2.21,2.21,0,0,1,26.85,128Z"/>
+                                        <path class="cls-5"
+                                              d="M53.92,50H19a2.55,2.55,0,0,1-2.55-2.55,2.8,2.8,0,0,1,.08-.64l.86-3.36,5.14-19.9,1.21-4.62A2.54,2.54,0,0,1,26.18,17H46.71a2.52,2.52,0,0,1,2.47,1.92l1.21,4.62,5.14,19.9.86,3.36a2.56,2.56,0,0,1-1.84,3.12A2.65,2.65,0,0,1,53.92,50Z"/>
+                                        <polygon class="cls-6"
+                                                 points="55.5 43.43 17.37 43.43 22.51 23.53 50.36 23.53 55.5 43.43"/>
+                                        <path class="cls-5"
+                                              d="M55.81,39.15H17.05a2.77,2.77,0,0,1-2.78-2.78v-5.8a2.79,2.79,0,0,1,2.78-2.79H55.81a2.79,2.79,0,0,1,2.79,2.79h0v5.8a2.77,2.77,0,0,1-2.74,2.78Z"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="lamp">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 138.77">
+                        <defs>
+                            <style>.cls-1 {
+                                fill: #546e7a;
+                            }
+
+                            .cls-2 {
+                                fill: #fec007;
+                            }
+
+                            .cls-3 {
+                                fill: #fe9700;
+                            }
+
+                            .cls-4 {
+                                fill: #eee;
+                            }
+
+                            .cls-5 {
+                                fill: #ba68c8;
+                            }
+
+                            .cls-6 {
+                                fill: #ab47bc;
+                            }</style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <g id="Layer_2-2" data-name="Layer 2">
+                                    <g id="Layer_1-2-2" data-name="Layer 1-2">
+                                        <rect class="cls-1" x="33" width="4" height="20"/>
+                                        <path class="cls-2"
+                                              d="M70,103.75A35,35,0,1,1,7.09,82.65,55,55,0,0,0,18.23,53.79c.12-1.35.15-2.67.15-4v-8.3H51.6v7.78a39.91,39.91,0,0,0,.17,4.51A53.9,53.9,0,0,0,62.68,82.36,34.87,34.87,0,0,1,70,103.75Z"/>
+                                        <path class="cls-3" d="M51.8,53.77h0v-.35A1.37,1.37,0,0,0,51.8,53.77Z"/>
+                                        <path class="cls-4"
+                                              d="M26.85,128a2.1,2.1,0,0,1-.61-.09c-14.06-4-16.68-18.2-16.79-18.81a2.2,2.2,0,0,1,1.78-2.52,2.18,2.18,0,0,1,2.52,1.76v0c.09.51,2.3,12.08,13.7,15.36a2.18,2.18,0,0,1,1.49,2.7h0A2.21,2.21,0,0,1,26.85,128Z"/>
+                                        <path class="cls-5"
+                                              d="M53.92,50H19a2.55,2.55,0,0,1-2.55-2.55,2.8,2.8,0,0,1,.08-.64l.86-3.36,5.14-19.9,1.21-4.62A2.54,2.54,0,0,1,26.18,17H46.71a2.52,2.52,0,0,1,2.47,1.92l1.21,4.62,5.14,19.9.86,3.36a2.56,2.56,0,0,1-1.84,3.12A2.65,2.65,0,0,1,53.92,50Z"/>
+                                        <polygon class="cls-6"
+                                                 points="55.5 43.43 17.37 43.43 22.51 23.53 50.36 23.53 55.5 43.43"/>
+                                        <path class="cls-5"
+                                              d="M55.81,39.15H17.05a2.77,2.77,0,0,1-2.78-2.78v-5.8a2.79,2.79,0,0,1,2.78-2.79H55.81a2.79,2.79,0,0,1,2.79,2.79h0v5.8a2.77,2.77,0,0,1-2.74,2.78Z"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="lamp">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 138.77">
+                        <defs>
+                            <style>.cls-1 {
+                                fill: #546e7a;
+                            }
+
+                            .cls-2 {
+                                fill: #fec007;
+                            }
+
+                            .cls-3 {
+                                fill: #fe9700;
+                            }
+
+                            .cls-4 {
+                                fill: #eee;
+                            }
+
+                            .cls-5 {
+                                fill: #ba68c8;
+                            }
+
+                            .cls-6 {
+                                fill: #ab47bc;
+                            }</style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <g id="Layer_2-2" data-name="Layer 2">
+                                    <g id="Layer_1-2-2" data-name="Layer 1-2">
+                                        <rect class="cls-1" x="33" width="4" height="20"/>
+                                        <path class="cls-2"
+                                              d="M70,103.75A35,35,0,1,1,7.09,82.65,55,55,0,0,0,18.23,53.79c.12-1.35.15-2.67.15-4v-8.3H51.6v7.78a39.91,39.91,0,0,0,.17,4.51A53.9,53.9,0,0,0,62.68,82.36,34.87,34.87,0,0,1,70,103.75Z"/>
+                                        <path class="cls-3" d="M51.8,53.77h0v-.35A1.37,1.37,0,0,0,51.8,53.77Z"/>
+                                        <path class="cls-4"
+                                              d="M26.85,128a2.1,2.1,0,0,1-.61-.09c-14.06-4-16.68-18.2-16.79-18.81a2.2,2.2,0,0,1,1.78-2.52,2.18,2.18,0,0,1,2.52,1.76v0c.09.51,2.3,12.08,13.7,15.36a2.18,2.18,0,0,1,1.49,2.7h0A2.21,2.21,0,0,1,26.85,128Z"/>
+                                        <path class="cls-5"
+                                              d="M53.92,50H19a2.55,2.55,0,0,1-2.55-2.55,2.8,2.8,0,0,1,.08-.64l.86-3.36,5.14-19.9,1.21-4.62A2.54,2.54,0,0,1,26.18,17H46.71a2.52,2.52,0,0,1,2.47,1.92l1.21,4.62,5.14,19.9.86,3.36a2.56,2.56,0,0,1-1.84,3.12A2.65,2.65,0,0,1,53.92,50Z"/>
+                                        <polygon class="cls-6"
+                                                 points="55.5 43.43 17.37 43.43 22.51 23.53 50.36 23.53 55.5 43.43"/>
+                                        <path class="cls-5"
+                                              d="M55.81,39.15H17.05a2.77,2.77,0,0,1-2.78-2.78v-5.8a2.79,2.79,0,0,1,2.78-2.79H55.81a2.79,2.79,0,0,1,2.79,2.79h0v5.8a2.77,2.77,0,0,1-2.74,2.78Z"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="lamp">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 138.77">
+                        <defs>
+                            <style>.cls-1 {
+                                fill: #546e7a;
+                            }
+
+                            .cls-2 {
+                                fill: #fec007;
+                            }
+
+                            .cls-3 {
+                                fill: #fe9700;
+                            }
+
+                            .cls-4 {
+                                fill: #eee;
+                            }
+
+                            .cls-5 {
+                                fill: #ba68c8;
+                            }
+
+                            .cls-6 {
+                                fill: #ab47bc;
+                            }</style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <g id="Layer_2-2" data-name="Layer 2">
+                                    <g id="Layer_1-2-2" data-name="Layer 1-2">
+                                        <rect class="cls-1" x="33" width="4" height="20"/>
+                                        <path class="cls-2"
+                                              d="M70,103.75A35,35,0,1,1,7.09,82.65,55,55,0,0,0,18.23,53.79c.12-1.35.15-2.67.15-4v-8.3H51.6v7.78a39.91,39.91,0,0,0,.17,4.51A53.9,53.9,0,0,0,62.68,82.36,34.87,34.87,0,0,1,70,103.75Z"/>
+                                        <path class="cls-3" d="M51.8,53.77h0v-.35A1.37,1.37,0,0,0,51.8,53.77Z"/>
+                                        <path class="cls-4"
+                                              d="M26.85,128a2.1,2.1,0,0,1-.61-.09c-14.06-4-16.68-18.2-16.79-18.81a2.2,2.2,0,0,1,1.78-2.52,2.18,2.18,0,0,1,2.52,1.76v0c.09.51,2.3,12.08,13.7,15.36a2.18,2.18,0,0,1,1.49,2.7h0A2.21,2.21,0,0,1,26.85,128Z"/>
+                                        <path class="cls-5"
+                                              d="M53.92,50H19a2.55,2.55,0,0,1-2.55-2.55,2.8,2.8,0,0,1,.08-.64l.86-3.36,5.14-19.9,1.21-4.62A2.54,2.54,0,0,1,26.18,17H46.71a2.52,2.52,0,0,1,2.47,1.92l1.21,4.62,5.14,19.9.86,3.36a2.56,2.56,0,0,1-1.84,3.12A2.65,2.65,0,0,1,53.92,50Z"/>
+                                        <polygon class="cls-6"
+                                                 points="55.5 43.43 17.37 43.43 22.51 23.53 50.36 23.53 55.5 43.43"/>
+                                        <path class="cls-5"
+                                              d="M55.81,39.15H17.05a2.77,2.77,0,0,1-2.78-2.78v-5.8a2.79,2.79,0,0,1,2.78-2.79H55.81a2.79,2.79,0,0,1,2.79,2.79h0v5.8a2.77,2.77,0,0,1-2.74,2.78Z"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="lamp">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 138.77">
+                        <defs>
+                            <style>.cls-1 {
+                                fill: #546e7a;
+                            }
+
+                            .cls-2 {
+                                fill: #fec007;
+                            }
+
+                            .cls-3 {
+                                fill: #fe9700;
+                            }
+
+                            .cls-4 {
+                                fill: #eee;
+                            }
+
+                            .cls-5 {
+                                fill: #ba68c8;
+                            }
+
+                            .cls-6 {
+                                fill: #ab47bc;
+                            }</style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <g id="Layer_2-2" data-name="Layer 2">
+                                    <g id="Layer_1-2-2" data-name="Layer 1-2">
+                                        <rect class="cls-1" x="33" width="4" height="20"/>
+                                        <path class="cls-2"
+                                              d="M70,103.75A35,35,0,1,1,7.09,82.65,55,55,0,0,0,18.23,53.79c.12-1.35.15-2.67.15-4v-8.3H51.6v7.78a39.91,39.91,0,0,0,.17,4.51A53.9,53.9,0,0,0,62.68,82.36,34.87,34.87,0,0,1,70,103.75Z"/>
+                                        <path class="cls-3" d="M51.8,53.77h0v-.35A1.37,1.37,0,0,0,51.8,53.77Z"/>
+                                        <path class="cls-4"
+                                              d="M26.85,128a2.1,2.1,0,0,1-.61-.09c-14.06-4-16.68-18.2-16.79-18.81a2.2,2.2,0,0,1,1.78-2.52,2.18,2.18,0,0,1,2.52,1.76v0c.09.51,2.3,12.08,13.7,15.36a2.18,2.18,0,0,1,1.49,2.7h0A2.21,2.21,0,0,1,26.85,128Z"/>
+                                        <path class="cls-5"
+                                              d="M53.92,50H19a2.55,2.55,0,0,1-2.55-2.55,2.8,2.8,0,0,1,.08-.64l.86-3.36,5.14-19.9,1.21-4.62A2.54,2.54,0,0,1,26.18,17H46.71a2.52,2.52,0,0,1,2.47,1.92l1.21,4.62,5.14,19.9.86,3.36a2.56,2.56,0,0,1-1.84,3.12A2.65,2.65,0,0,1,53.92,50Z"/>
+                                        <polygon class="cls-6"
+                                                 points="55.5 43.43 17.37 43.43 22.51 23.53 50.36 23.53 55.5 43.43"/>
+                                        <path class="cls-5"
+                                              d="M55.81,39.15H17.05a2.77,2.77,0,0,1-2.78-2.78v-5.8a2.79,2.79,0,0,1,2.78-2.79H55.81a2.79,2.79,0,0,1,2.79,2.79h0v5.8a2.77,2.77,0,0,1-2.74,2.78Z"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------x--------hero----------x------>
+
+
+    <!-------------------intro----------------->
+
+
+    <style>
+
+        #intro {
+            width: 100%;
+            background: #f3f3f3;
+            padding: 5rem 0 .01rem 0;
+        }
+
+        #first-red-title {
+            width: 100%;
+            height: 42px;
+            justify-content: flex-start;
+            -webkit-justify-content: flex-start;
+            align-items: center;
+            -webkit-align-items: center;
+            position: relative;
+        }
+
+        #first-red-title .red-band-fs {
+            display: block;
+            height: 42px;
+            width: 120px;
+            background: url("images/red-band.svg") no-repeat;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: rotate(180deg);
+        }
+
+        #first-red-title .red-band-ss {
+            color: #fff;
+            position: absolute;
+            top: 8px;
+            right: 14px;
+            text-shadow: 0 0 2px #000;
+        }
+
+        #intro-mtn {
+            width: 90%;
+            background: #673AB7;
+            position: relative;
+            margin: 32px auto;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 0 5px 1px rgba(0, 0, 0, .5);
+        }
+
+        #intro-mtn span {
+            font-size: 16px;
+            font-weight: 300;
+            color: #ffffff;
+            text-shadow: 0 0 1px #000;
+
+        }
+
+        #intro-mtn span::after {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: url("images/hello.svg");
+            background-size: cover;
+            position: absolute;
+            top: 19px;
+            right: 64px;
+        }
+
+        #intro-mtn p {
+            text-align: justify;
+            margin: 0;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 300;
+            text-shadow: 0 0 1px #000;
+
+        }
+
+        #serious-img {
+            width: 90%;
+            position: relative;
+            margin: 65px auto;
+            padding: 32px 0;
+
+        }
+
+        #blur-background {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url("images/3.jpg") -116px 0;
+            background-size: cover !important;
+            filter: blur(8px);
+            z-index: 10;
+            overflow: hidden;
+        }
+
+        #serious-img-color-background {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            z-index: 5;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 2px;
+            box-sizing: unset !important;
+            box-shadow: 0 0 5px 1px rgba(0, 0, 0, .4);
+        }
+
+        #serious-img-inside {
+            width: 100%;
+            position: relative;
+            z-index: 50;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 1rem;
+        }
+
+        .image-tab {
+            width: 30rem;
+        }
+
+        .title-top-img {
+            width: 100%;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 19px;
+            font-weight: 900;
+            color: white;
+            text-shadow: 0 0 5px #000;
+            letter-spacing: 2px;
+        }
+
+        .bottom-img {
+            width: 100%;
+            margin-top: 24px;
+            animation: wave 5s linear infinite;
+            border: 4px solid #fff;
+            box-shadow: 0 0 5px 1px rgba(0, 0, 0, .5);
+
+        }
+
+        #serious-img-title {
+            position: absolute;
+            top: -55px;
+            line-height: 46px;
+            height: 3rem;
+            border-radius: 10px;
+            right: 0;
+            left: 0;
+            margin: auto;
+            width: 20rem;
+            background: #FF8F00;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 0 5px 1px rgba(0, 0, 0, .4);
+            font-size: 15px;
+            text-shadow: 0 0 3px #000;
+
+        }
+
+        @keyframes wave {
+            0%, 100% {
+                border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+            }
+            25% {
+                border-radius: 73% 27% 26% 38% / 73% 36% 64% 27%;
+            }
+            50% {
+                border-radius: 28% 72% 44% 56% / 49% 40% 60% 51%;
+            }
+            75% {
+                border-radius: 40% 60% 70% 30% / 47% 62% 38% 53%;
+            }
+        }
+
+        @media only screen and (max-width: 1180px ) {
+
+            .image-tab {
+                width: 35rem;
+            }
+
+        }
+
+        @media only screen and (max-width: 650px ) {
+
+            .image-tab {
+                width: 100%;
+            }
+
+        }
+
+        @media only screen and (max-width: 450px ) {
+
+            #serious-img {
+                width: 100%;
+            }
+
+            #serious-img-inside {
+                padding: 0 12px
+            }
+
+            #serious-img-color-background {
+                border-radius: unset;
+            }
+
+        }
+
+        @media only screen and (max-width: 350px ) {
+            #serious-img-title {
+                width: 100%;
+                border-radius: unset;
+                height: auto;
+                padding: 0 8px;
+            }
+
+            #serious-img-inside {
+                padding: 0 10px
+            }
+        }
+
+        @media only screen and (max-width: 285px ) {
+            #serious-img-title {
+                line-height: 25px;
+                padding: 8px 8px;
+
+            }
+        }
+
+
+    </style>
+
+
+    <div id="intro">
+
+        <div id="first-red-title" class="flex-display">
+            <span class="red-band-fs"></span>
+            <span class="red-band-ss">مـعـرفی دوره</span>
+        </div>
+
+        <div id="intro-mtn" data-aos="zoom-in">
+            <span>با سلام</span>
+            <p>در این دوره ، 504 واژه ضروری زبان انگلیسی به شکلی کاملا نوین و با استفاده از فیلم ها ، سریال ها و انیمیشن
+                های معروف انگلیسی زبان و همچنین تصاویر متنوع آموزش داده شده است که باعث می شود سرعت یادگیری فراگیر چندین
+                برابر افزایش پیدا کند و در مدت زمان کوتاهی تمامی این لغات را به خوبی بیاموزد.</p>
+        </div>
+
+
+        <div id="serious-img">
+
+            <div id="blur-background"></div>
+            <div id="serious-img-color-background"></div>
+
+            <div id="serious-img-inside">
+
+                <div id="serious-img-title">برخی از سریال های مورد استفاده در این دوره</div>
+
+                <div class="image-tab" data-aos="zoom-in">
+                    <div class="title-top-img">Friends</div>
+                    <img src="images/4.png" alt="serious-image" class="bottom-img">
+                </div>
+
+
+                <div class="image-tab" data-aos="zoom-in">
+                    <div class="title-top-img">Big Bang Theory</div>
+                    <img src="images/3.jpg" alt="serious-image" class="bottom-img">
+                </div>
+
+
+                <div class="image-tab" data-aos="zoom-in">
+                    <div class="title-top-img">Office</div>
+                    <img src="images/2.jpg" alt="serious-image" class="bottom-img">
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!----------x--------intro----------x------>
+
+
+    <!-------------------video----------------->
+
+    <style>
+        #video-place {
+            width: 100%;
+            padding: 2rem 0;
+            background: #ffffff;
+        }
+
+        #second-red-title {
+            width: 100%;
+            height: 41px;
+            justify-content: flex-end;
+            -webkit-justify-content: flex-end;
+            align-items: center;
+            -webkit-align-items: center;
+            margin-bottom: 26px;
+        }
+
+        #second-red-title span {
+            display: block;
+            height: 2.625rem;
+            width: 7.5rem;
+            background: url("images/red-title.png") no-repeat -2px -43px;
+        }
+
+        #sample-video {
+            width: 70%;
+            margin: auto;
+        }
+
+        #video-main {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 3px 1px rgba(0, 0, 0, .5);
+
+        }
+
+        #video-title {
+            color: #8b969c;
+            text-align: center;
+            margin-bottom: 25px;
+            padding: 0 .5rem;
+            line-height: 29px;
+        }
+
+        @media only screen and (max-width: 990px) {
+            #sample-video {
+                width: 100%;
+                padding: 0 1.5rem;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            #sample-video {
+                padding: 0 .7rem;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            #sample-video {
+                padding: 0 .4rem;
+            }
+        }
+
+
+    </style>
+
+    <div id="video-place">
+
+        <div id="second-red-title" class="flex-display">
+            <span></span>
+        </div>
+        <p id="video-title">در قسمت زیر می توانید بخشی از دوره را مشاهده کنید! 😍</p>
+        <div id="sample-video">
+            <video id="video-main" width="100%" controls preload="metadata" poster="images/big-bang.jpg">
+                <source src="videos/bachelor.mp4">
+                این مرورگر قادر به نمایش این ویدئو نمی باشد
+            </video>
+        </div>
+    </div>
+
+    <!----------x--------video----------x------>
+
+
+    <!-------------------features----------------->
+
+    <style>
+
+        #third-red-title {
+            width: 100%;
+            height: 41px;
+            justify-content: flex-start;
+            -webkit-justify-content: flex-start;
+            align-items: center;
+            -webkit-align-items: center;
+            margin-bottom: 26px;
+        }
+
+        #third-red-title span {
+            display: block;
+            height: 2.625rem;
+            width: 7.5rem;
+            background: url("images/red-title.png") no-repeat 0 -87px;
+        }
+
+        #features {
+            width: 100%;
+            padding: 2rem 0;
+            background: #f3f3f3;
+        }
+
+        #feature-parent {
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 100%
+        }
+
+        .features-place {
+            margin: 1.7rem 1rem;
+            width: 10rem;
+            height: 16rem;
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 3px 1px rgba(0, 0, 0, .25);
+            margin: auto;
+            position: relative;
+            border: none !important;
+        }
+
+        .top-card {
+            width: 100%;
+            height: 40%;
+            background: #ffffff;
+            position: relative;
+            z-index: 50;
+        }
+
+        .wave-card {
+            position: absolute;
+            width: 12rem;
+            height: 11rem;
+            background: #fff;
+            top: -20px;
+            border-radius: 100%;
+            left: -16px;
+            animation: liquid 2s linear infinite;
+            box-shadow: 0 0 3px 1px rgba(0, 0, 0, .2);
+            z-index: 1;
+        }
+
+        .bottom-card {
+            width: 100%;
+            height: 60%;
+            display: flex;
+            align-items: center;
+        }
+
+        .card-mtn {
+            width: 90%;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 26px;
+            color: #fff;
+            margin: 40px 12px 0 12px;
+        }
+
+        .card-img {
+            width: 65%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            margin: auto;
+            top: 20px
+
+        }
+
+        #features-title {
+            color: #8b969c;
+            text-align: center;
+            margin-bottom: 10px;
+            padding: 0 .5rem;
+            line-height: 29px;
+
+        }
+
+        @keyframes liquid {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media only screen and (max-width: 1155px ) {
+            #feature-parent {
+                padding: 0 8.1rem
+            }
+
+            .features-place {
+                margin: 1.7rem 2rem;
+            }
+        }
+
+        @media only screen and (max-width: 940px ) {
+            #feature-parent {
+                padding: 0 2rem
+            }
+
+        }
+
+        @media only screen and (max-width: 767px ) {
+            #feature-parent {
+                padding: 0
+            }
+
+            .features-place {
+                margin: 1.7rem 1rem;
+            }
+        }
+
+    </style>
+
+    <div id="features">
+
+        <div id="third-red-title" class="flex-display">
+            <span></span>
+        </div>
+
+        <p id="features-title">مهم ترین و اصلی ترین ویژگی های دوره 😃</p>
+
+        <div id="feature-parent" class="flex-display">
+            <div class="features-place">
+                <div class="card">
+                    <div class="top-card">
+                        <img src="images/card/card-study.svg" class="card-img">
+                    </div>
+                    <div class="wave-card"></div>
+                    <div class="bottom-card" style="background: #FF1744"><p class="card-mtn"> خود آموز بودن مجموعه </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-place">
+                <div class="card">
+                    <div class="top-card">
+                        <img src="images/card/card-film.svg" class="card-img">
+                    </div>
+                    <div class="wave-card"></div>
+                    <div class="bottom-card" style="background: #653bba"><p style="margin-top: 51px" class="card-mtn">
+                        فیلم ها و سریال های مختلف
+                        جهت تثبیت یادگیری</p></div>
+                </div>
+            </div>
+
+            <div class="features-place">
+                <div class="card">
+                    <div class="top-card">
+                        <img src="images/card/card-teacher.svg" class="card-img">
+                    </div>
+                    <div class="wave-card"></div>
+                    <div class="bottom-card" style="background: #546E7A"><p class="card-mtn">آموزش لغات در قالب مثال های
+                        مختلف</p></div>
+                </div>
+            </div>
+
+            <div class="features-place">
+                <div class="card">
+                    <div class="top-card">
+                        <img src="images/card/card-camera.svg" class="card-img">
+                    </div>
+                    <div class="wave-card"></div>
+                    <div class="bottom-card" style="background: #2196f3;"><p class="card-mtn">تصاویر مختلف جهت تقویت
+                        حافظه تصویری</p></div>
+                </div>
+            </div>
+
+            <div class="features-place">
+                <div class="card">
+                    <div class="top-card">
+                        <img src="images/card/card-jet.svg" class="card-img">
+                    </div>
+                    <div class="wave-card"></div>
+                    <div class="bottom-card" style="background: #FFA000"><p class="card-mtn">یادگیری سریع و بدون
+                        وقفه</p></div>
+                </div>
+            </div>
+
+            <div class="features-place">
+                <div class="card">
+                    <div class="top-card">
+                        <img src="images/card/card-coin.svg" class="card-img">
+                    </div>
+                    <div class="wave-card"></div>
+                    <div class="bottom-card" style="background:#00ac65 "><p class="card-mtn">صرفه جویی اقتصادی</p></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!----------x--------features----------x------>
+
+    <!-------------------add-to-cart----------------->
+
+    <style>
+        #cart-back {
+            background: #262431
+        }
+
+        #how-to-prepare {
+            color: #fff;
+            padding: 30px 30px 0 30px;
+            background: #262431
+        }
+
+        #how-to-prepare div {
+            background: #6200EA;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        #how-to-prepare div h4 {
+            margin: 0 0 6px 0;
+            font-size: 1.02rem;
+        }
+
+        #how-to-prepare div p {
+            text-align: justify;
+            line-height: 30px
+        }
+
+    </style>
+
+    <div id="cart-back">
+        <div id="how-to-prepare">
+            <div>
+                <h4>نحوه تهیه مجموعه :</h4>
+                <p>تهیه مجموعه به صورت آنلاین بوده بدین صورت که پس از خرید
+                    ، لینک های دانلود برای شما نمایش داده می شود ، همچنین یک نسخه از لینک های دانلود به جمیل شما ارسال
+                    می شود علاوه بر این شما می توانید پس از خرید ، لینک های دانلود را در قسمت پروفایل کاربری خود مشاهده
+                    کنید و از این طریق اقدام به دانلود مجموعه کنید. </p>
+            </div>
+        </div>
+
+        <style>
+            #add-to-cart-place {
+                width: 100%;
+                height: 720px;
+                background: #262431 url("images/jet33.png") repeat;
+                animation: cart 30s linear infinite alternate;
+                padding: 3rem 0 3rem 0;
+                display: flex;
+                align-items: center;
+
+            }
+
+            @keyframes cart {
+                from {
+                    background-position: -470px 0;
+                }
+                to {
+                    background-position: 1342px 0;
+                }
+            }
+
+            #final-desc {
+                width: 350px;
+                height: auto;
+                margin: auto;
+                border-radius: 10px;
+                overflow: hidden;
+                position: relative;
+                color: #fff;
+                z-index: 10;
+                text-shadow: 0 0 4px #000;
+                padding: 5px 15px 15px 15px;
+            }
+
+            #final-desc-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                right: 0;
+                background: #8E24AA;
+                opacity: .2;
+                z-index: -5;
+
+            }
+
+            #final-desc h4 {
+                margin: 10px 0;
+                font-size: 1.05rem;
+
+            }
+
+            #final-desc .first-ul-final-decs li {
+                margin-bottom: 10px
+            }
+
+            .line-between-desc {
+                width: 100%;
+                margin: 10px auto;
+                border: 1px dashed #fff;
+                opacity: .5
+            }
+
+            #final-desc .sec-ul-final-decs li {
+                text-align: center;
+                margin-bottom: 8px;
+            }
+
+            .sec-ul-final-decs li .cart-first-price {
+                font-size: 1.1rem;
+                position: relative;
+            }
+
+            .sec-ul-final-decs li .cart-first-price .cart-first-price-line {
+                position: absolute;
+                width: 100px;
+                border: 1px solid #fff;
+                display: inline-block;
+                top: 15px;
+                right: -3px;
+                transform: rotate(-8deg);
+                opacity: .5
+            }
+
+            .sec-ul-final-decs li .cart-sec-price {
+                color: #76FF03;
+            }
+
+            #final-desc .add-to-cart-btn a {
+                display: block;
+                text-align: center;
+                padding: 10px;
+                border-radius: 100px;
+                margin: auto;
+                color: #fff;
+                background: #FF8F00;
+                text-shadow: none;
+                transition: all ease .2s;
+            }
+
+            #final-desc .add-to-cart-btn a:hover {
+                background: #E91E63;
+            }
+
+        </style>
+
+        <div id="add-to-cart-place">
+
+            <div id="final-desc">
+
+                <div id="final-desc-back"></div>
+
+                <h4>توضیحات تکمیلی :</h4>
+
+                <ul class="first-ul-final-decs">
+                    <li>
+                        <span>تعداد قسمت ها :</span>
+                        <span>42 قسمت</span>
+                    </li>
+                    <li>
+                        <span>مجموع ساعات آموزشی :</span>
+                        <span>10 ساعت </span>
+                    </li>
+                    <li>
+                        <span>فرمت آموزش :</span>
+                        <span>MP4</span>
+                    </li>
+                    <li>
+                        <span>دستگاه های قابل پخش :</span>
+                        <span>تمامی دستگاه ها</span>
+                    </li>
+
+                    <li>
+                        <span>تاریخ انتشار :</span>
+                        <span>1400/4/22</span>
+                    </li>
+                    <li>
+                        <span>پرداخت و تهیه :</span>
+                        <span>آنلاین</span>
+                    </li>
+                    <li style="margin-bottom: 15px">
+                        <span>حجم پکیج :</span>
+                        <span>2 گیگ و 200 مگابایت</span>
+                    </li>
+
+                </ul>
+
+                <div class="line-between-desc"></div>
+
+                <h4>
+                    هزینه دوره :
+                </h4>
+                <ul class="sec-ul-final-decs">
+                    <li>
+                    <span class="cart-first-price">
+                       <span> 200,000</span>
+                           <span class="cart-first-price-line"></span>
+                    </span>
+                        <span>تومان</span>
+                    </li>
+                    <li>به مدت محدود</li>
+                    <li>
+                        <span class="cart-sec-price" style="font-size: 1.4rem;">90,000</span>
+                        <span class="cart-sec-price">تومان</span>
+                    </li>
+                </ul>
+
+                <div class="add-to-cart-btn">
+                    <a href="#">افزودن به سبد خرید</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!----------x--------add-to-cart--------x-------->
+
+
+    <!-------------------comments----------------->
+
+    <style>
+
+        #comments-place {
+            width: 100%;
+            padding: 2.5rem 0 0 0;
+            background: #f3f3f3;
+        }
+
+        .viewers-comment {
+            width: 100%;
+            height: auto;
+            clear: both;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #4d535f;
+        }
+
+        .color-bubble-gray, .color-bubble-orange {
+            width: 100%;
+            display: block;
+            clear: both;
+            line-height: 18px;
+            text-align: center;
+        }
+
+        .color-bubble-gray i::after, .color-bubble-gray i::before, .color-bubble-orange i::after, .color-bubble-orange i::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            display: block !important;
+        }
+
+        .color-bubble-gray i::after, .color-bubble-orange i::after {
+            right: .88rem;
+            top: -0.55rem;
+        }
+
+        .color-bubble-gray i::before, .color-bubble-orange i::before {
+            right: -0.89rem;
+        }
+
+        .color-bubble-gray i, .color-bubble-gray i::after, .color-bubble-gray i::before, .color-bubble-orange i, .color-bubble-orange i::after, .color-bubble-orange i::before {
+            width: 9px;
+            height: 9px;
+            display: inline-block;
+            position: relative;
+            border-radius: 100%;
+            background: #BDBDBD;
+        }
+
+        .color-bubble-orange i, .color-bubble-orange i::after, .color-bubble-orange i::before {
+            background: #FB8C00;
+        }
+
+        .viewers-comment h4 {
+            font-size: 19px;
+            font-weight: bold;
+            color: #49546B;
+            margin: 15px auto;
+            text-align: center;
+        }
+
+        #comments {
+            width: 900px;
+            margin: auto;
+            padding-bottom: 18px;
+            position: relative;
+        }
+
+        #comment-list li {
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+            position: relative;
+            padding: 25px 35px;
+            background: #fff;
+            border-radius: 25px;
+        }
+
+        #comment-list .viewer-li {
+            border: 3px solid #FFA000;
+        }
+
+        .comment-content {
+            width: 100%;
+            height: auto;
+            position: relative;
+            text-align: justify;
+        }
+
+        .comment-content footer {
+            padding: 0 0 15px 0;
+            position: relative;
+            margin-bottom: 5px;
+
+        }
+
+        .after-line::after {
+            content: '';
+            width: 80%;
+            height: 2px;
+            background: #eee;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: 0 auto;
+        }
+
+        .comment-id {
+            line-height: 30px;
+            float: right;
+            font-size: 20px;
+            font-weight: bold;
+            position: relative;
+            z-index: 2;
+            color: #49546B;
+        }
+
+        .comment-icon {
+            width: 36px;
+            height: 28px;
+            float: right;
+            margin: 0 15px 0 10px;
+            background: url(images/icon_comment.png) no-repeat center;
+        }
+
+        .comment-reply {
+            float: left;
+            margin: 0 7px 0 0;
+        }
+
+        .comment-reply-link {
+            text-align: center;
+            padding: 1px 25px 4px 25px;
+            color: #49546B;
+            font-size: 15px;
+            border: 2px solid #eee;
+            border-radius: 7px;
+            transition: 0.3s all
+        }
+
+        .comment-reply-link:hover {
+            color: #ffffff;
+            background: #49546B;
+            border: 2px solid #49546B
+        }
+
+        .clear {
+            clear: both
+        }
+
+        .comment-mtn {
+            width: 100%;
+            position: relative;
+            padding: 10px 15px 10px 13px;
+        }
+
+        .comment-mtn div p {
+            font-size: 14px;
+            color: #4d535f;
+            line-height: 25px;
+            text-align: justify;
+        }
+
+        #comment-list .child li {
+            box-shadow: unset;
+            width: 100%;
+            margin-bottom: 0;
+            padding: 0 35px 8px 35px;
+        }
+
+        #comment-list .child .child-first-li {
+            padding-top: 15px
+        }
+
+        #comment-list .child li footer {
+            float: right;
+            margin-left: 20px;
+        }
+
+        #comment-list .child li .comment-icon {
+            width: 21px;
+            height: 15px;
+            display: block;
+            margin: 15px auto 10px auto;
+            float: none;
+            background: url(images/icon_comment_quotes.png) no-repeat center;
+        }
+
+        #comment-list .child li .comment-owner {
+            display: block;
+            width: 100%;
+            clear: both;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        #comment-list .child li .comment-mtn {
+            width: auto;
+            overflow: hidden;
+            padding-bottom: 0;
+        }
+
+        #comment-list .child li .comment-mtn div {
+            width: 100%;
+            padding: 15px 20px;
+            background: #FFF59D;
+            position: relative;
+            z-index: 999;
+            display: block;
+            border-radius: 18px 0 18px 18px;
+        }
+
+        #comment-list .child li .comment-mtn .reply-bg {
+            width: 50%;
+            height: 70%;
+            overflow: hidden;
+            background: #FF8F00;
+            border-radius: 0 0 18px 0;
+            position: absolute;
+            right: 7px;
+            bottom: 0;
+        }
+
+        #comments-place #your-comment {
+            width: 100%;
+            padding: 2.5rem 0 .5rem 0;
+            background: #ffffff;
+        }
+
+        #your-comment #your-comment-center {
+            width: 900px;
+            height: auto;
+            margin: 0 auto;
+            position: relative;
+        }
+
+    </style>
+
+    <div id="comments-place">
+
+        <div class="viewers-comment">
+            <span class="color-bubble-gray">
+                <i></i>
+                <i></i>
+            </span>
+            <span class="color-bubble-orange">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+            <h4>نظرات</h4>
+        </div>
+
+
+        <style>
+            @media only screen and (max-width: 940px ) {
+
+                #comments {
+                    width: 95%
+                }
+
+                #comment-list .child li footer {
+                    float: none;
+                    margin: 0;
+                }
+
+                #comment-list li {
+                    padding: 15px 15px;
+                }
+
+                .comment-mtn {
+                    padding: 10px 15px 0 13px;
+                }
+
+                #comment-list .child li {
+                    padding: 8px 3px 0 3px !important;
+                }
+
+                #comment-list .child footer {
+                    padding: 0 15px 0 0;
+                }
+
+                #comment-list .child li .comment-mtn div {
+                    padding: 10px 15px;
+
+                }
+
+                #comment-list .child li .comment-icon {
+                    margin: 11px auto 5px auto;
+                }
+
+                .comment-icon-media {
+                    margin: 0 0 0 10px;
+                }
+
+                #comment-list .child li .comment-mtn .reply-bg {
+                    right: 9px;
+                }
+            }
+
+            @media only screen and (max-width: 400px ) {
+
+                #comment-list li {
+                    padding: 15px 10px;
+                }
+            }
+
+            @media only screen and (max-width: 290px ) {
+
+                .comment-reply-link {
+                    padding: 1px 15px 4px 15px;
+                }
+            }
+        </style>
+
+        <div id="comments">
+
+            <ul id="comment-list">
+                <li class="viewer-li">
+                    <article>
+                        <div class="comment-content">
+                            <footer class="after-line">
+                        <span class="comment-id">
+                            <i class="comment-icon comment-icon-media"></i>
+                            <span class="comment-owner">محمدرضا</span>
+                        </span>
+
+                                <div class="comment-reply">
+                                    <a href="#" class="comment-reply-link">پاسخ</a>
+                                </div>
+
+                                <div class="clear"></div>
+
+                            </footer>
+
+                            <div class="comment-mtn">
+                                <div>
+                                    <p>من میخواهم برنامه نویسی آندروید را یاد بگیرم حتی در مورد نحوه نوشتن برنامه و زبان
+                                        نوشتن هم چیزی نمیدانم ب ب برنامه ای کاربردی ، از پایه تا حرفه وجود دارد که مورد
+                                        استفاده من باشد؟</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <ul class="child">
+
+                        <li class="child-first-li">
+                            <article>
+                                <div class="comment-content">
+                                    <footer>
+
+                        <span class="comment-id">
+                            <i class="comment-icon"></i>
+                            <span class="comment-owner">مدیر سایت</span>
+                        </span>
+                                        <div class="clear"></div>
+                                    </footer>
+
+                                    <div class="comment-mtn">
+                                        <div>
+                                            <p>من میخواهم برنامه نویسی آندروید را یاد بگیرم حتی در منمم مخ و هخئخ ئخهئ خ
+                                                ئهخئ خ ئهئ خئ ئه ئخه عدع ده دهد عد دع ده دعد عه د ع دع </p>
+                                        </div>
+                                        <i class="reply-bg"></i>
+                                    </div>
+                                    <div class="clear"></div>
+
+                                </div>
+                                <div class="clear"></div>
+                            </article>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div id="your-comment">
+
+            <div id="your-comment-center">
+
+                <div class="viewers-comment">
+            <span class="color-bubble-gray">
+                <i></i>
+                <i></i>
+            </span>
+                    <span class="color-bubble-orange">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+                    <h4>بازخوردهای خود را برای ما ارسال کنید</h4>
+                </div>
+
+                <style>
+
+                    #comment-form {
+                        width: 100%;
+                        height: auto;
+                        margin: 0 auto;
+                        color: #4d535f;
+                    }
+
+                    .insert-mosh {
+                        width: 100% !important;
+                        height: auto;
+                        float: right;
+                        color: #4d535f;
+                    }
+
+                    .comment-form-name, .comment-form-email, .comment-form-comment {
+                        width: 49%;
+                        height: 44px;
+                        float: right;
+                        position: relative;
+                        font-size: 13px !important;
+                        margin-bottom: 15px;
+                        background: #fff;
+                        color: #333;
+                        border: 2px solid #ccc;
+                        border-radius: 5px;
+                        overflow: hidden;
+                        transition: all ease .25s;
+                    }
+
+                    .mosh-new-border {
+                        border: 2px solid #FFCA28;
+                    }
+
+                    .comment-form-email {
+                        float: left
+                    }
+
+                    .user-mosh {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 100%;
+                        height: 40px;
+                        text-indent: 10px;
+                        line-height: 10px;
+                        outline: unset;
+                        border: unset;
+                    }
+
+                    .comment-form-comment {
+                        width: 100%;
+                        height: 160px;
+                        margin-bottom: 30px;
+                    }
+
+                    .comment-form-comment textarea {
+                        font-size: 13px !important;
+                        width: 100% !important;
+                        height: 150px !important;
+                        float: left !important;
+                        margin-bottom: 5px;
+                        padding: 10px;
+                        border: unset;
+                        outline: unset;
+                    }
+
+                    #submit {
+                        padding: 8px 15px;
+                        outline: unset;
+                        border: unset;
+                        cursor: pointer;
+                        display: table;
+                        color: #fff;
+                        margin: 30px auto;
+                        background: linear-gradient(90deg, rgba(52, 222, 147, 1) 0%, rgba(31, 183, 118, 1) 100%);
+                        border-radius: 20px;
+                        box-shadow: 0 6px 20px rgba(28, 76, 156, .1);
+                        transition: all ease .3s;
+                    }
+
+                    #submit:hover {
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                        background: linear-gradient(-90deg, rgba(52, 222, 147, 1) 0%, rgba(31, 183, 118, 1) 100%);
+                    }
+                </style>
+
+                <form action="" id="comment-form">
+                    <div class="insert-mosh">
+
+                        <p class="comment-form-name mosh-change-border">
+                            <label for="name"></label>
+                            <input class="user-mosh" id="name" type="text" aria-required="true" name="name"
+                                   placeholder="نام (مورد نیاز)">
+                        </p>
+
+                        <p class="comment-form-email mosh-change-border">
+                            <label for="email"></label>
+                            <input type="text" id="email" name="email" aria-required="true" class="user-mosh"
+                                   placeholder="پست الکترونیکی (مورد نیاز)">
+                        </p>
+
+                    </div>
+
+                    <p class="comment-form-comment mosh-change-border">
+                        <label for="comment"></label>
+                        <textarea id="comment" name="comment" placeholder="نظرتان را بنویسید" aria-required="true"
+                                  cols="45" rows="11"></textarea>
+                    </p>
+
+                    <p class="form-submit">
+                        <input type="submit" id="submit" name="submit" value="ارسال دیدگاه">
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <style>
+
+        @media only screen and (max-width: 930px) {
+            #your-comment-center {
+                width: 100% !important;
+                padding: 0 15px;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            #your-comment-center {
+                padding: 0 10px;
+            }
+
+            .comment-form-name, .comment-form-email {
+                width: 100%
+            }
+        }
+
+
+    </style>
+
+
+    <!----------x--------comments-------x--------->
+
+</div>
+
+<!-------------------footer----------------->
+
+<style>
+    #footer {
+        width: 100%;
+        padding: 1.5rem 0;
+        background: #212121 url("images/foot-bg.gif") repeat top;
+    }
+
+    #footer-bar {
+        margin: auto
+    }
+
+    #social-media, #about-us {
+        width: 312px;
+        padding: 1rem .5rem;
+        margin-right: 2rem;
+    }
+
+    #useful-link, #footer-logo {
+        width: 258px;
+        padding: 1rem .5rem;
+    }
+
+    #about-us {
+        margin: 1rem 1rem 1rem 0;
+        color: #fff;
+        z-index: 100;
+        position: relative;
+        overflow: hidden;
+        -webkit-box-shadow: 0 0 6px 2px rgba(0, 0, 0, .8);
+        -moz-box-shadow: 0 0 6px 2px rgba(0, 0, 0, .8);
+        -o-box-shadow: 0 0 6px 2px rgba(0, 0, 0, .8);
+        box-shadow: 0 0 6px 2px rgba(0, 0, 0, .8);
+        border: 1px solid rgba(0, 0, 0, .8);
+        text-shadow: 0 0 4px rgba(0, 0, 0, .8);
+    }
+
+    #about-us-back {
+        padding: 0 .5rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #9C27B0;
+        opacity: .6;
+        z-index: -1;
+        -webkit-animation: color 7s ease-in-out infinite alternate;
+        -o-animation: color 7s ease-in-out infinite alternate;
+        -moz-animation: color 7s ease-in-out infinite alternate;
+        animation: color 7s ease-in-out infinite alternate;
+    }
+
+    @keyframes color {
+        25% {
+            background: #009688;
+        }
+        50% {
+            background: #9C27B0;
+        }
+        75% {
+            background: #3F51B5;
+        }
+    }
+
+    @-moz-keyframes color {
+        25% {
+            background: #009688;
+        }
+        50% {
+            background: #9C27B0;
+        }
+        75% {
+            background: #3F51B5;
+        }
+    }
+
+    @-webkit-keyframes color {
+        25% {
+            background: #009688;
+        }
+        50% {
+            background: #9C27B0;
+        }
+        75% {
+            background: #3F51B5;
+        }
+    }
+
+    @-o-keyframes color {
+        25% {
+            background: #009688;
+        }
+        50% {
+            background: #9C27B0;
+        }
+        75% {
+            background: #3F51B5;
+        }
+    }
+
+    @-ms-keyframes color {
+        25% {
+            background: #009688;
+        }
+        50% {
+            background: #9C27B0;
+        }
+        75% {
+            background: #3F51B5;
+        }
+    }
+
+    #about-us-gap {
+        width: 3rem;
+        height: 1rem;
+        position: absolute;
+        display: inline-block;
+        background: #212121 url("images/foot-bg.gif") repeat top;
+        top: 20px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+    }
+
+    #about-us #about-us-mtn p {
+        font-size: 15px;
+        text-align: justify;
+        line-height: 28px;
+        padding: 0 1rem
+    }
+
+    #about-us h4 {
+        padding: 0 1rem;
+        font-size: 1rem;
+        margin: 21px 0;
+    }
+
+    .social-media-place {
+        width: 100%;
+    }
+
+    .social-media-color {
+        width: 230px;
+        height: 40px;
+        -webkit-border-radius: 30px 4px 30px 4px;
+        -moz-border-radius: 30px 4px 30px 4px;
+        border-radius: 30px 4px 30px 4px;
+        border: 1px solid rgba(0, 0, 0, .8);
+        margin-bottom: 25px;
+        -webkit-box-shadow: 0 0 6px 2px rgba(0, 0, 0, .8);
+        -moz-box-shadow: 0 0 6px 2px rgba(0, 0, 0, .8);
+        -o-box-shadow: 0 0 6px 2px rgba(0, 0, 0, .8);
+        box-shadow: 0 0 6px 2px rgba(0, 0, 0, .8);
+        color: #fff;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600;
+        text-shadow: 0 0 4px rgba(0, 0, 0, .8);
+        letter-spacing: 2px;
+        line-height: 38px;
+    }
+
+    .social-media-icon {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        background: url("images/40.png") no-repeat;
+        -webkit-filter: drop-shadow(-3px 5px 2px rgba(0, 0, 0, 1));
+        filter: drop-shadow(-3px 5px 2px rgba(0, 0, 0, 1));
+    }
+
+    #social-media h3 {
+        margin-top: 1px;
+        margin-bottom: 1.89rem;
+        color: white;
+        font-size: 15px;
+        text-align: right;
+        text-shadow: 0 0 4px rgba(0, 0, 0, 1);
+    }
+
+    #useful-link li {
+        color: white;
+        text-align: right;
+        font-size: 15px;
+        margin-bottom: 1.89rem;
+        font-weight: 400;
+
+    }
+
+    #useful-link-holder {
+        margin: auto;
+        width: 200px;
+        padding-right: 60px;
+
+    }
+
+    .useful-link-title {
+        text-shadow: 0 0 4px rgba(0, 0, 0, .8);
+        margin-right: 5px
+    }
+
+    #useful-link li a {
+        color: white;
+        height: 100%;
+        width: auto;
+    }
+
+    #useful-link li h4 {
+        margin-top: 1px;
+        text-shadow: 0 0 4px rgba(0, 0, 0, .8);
+        font-size: 15px;
+    }
+
+    #useful-link li a .useful-link-arrow {
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        background: url("images/60.svg") no-repeat;
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        -ms-transition: all ease .5s;
+        -o-transition: all ease .5s;
+        transition: all ease .5s;
+
+    }
+
+    #useful-link li a:hover .useful-link-arrow {
+        margin-right: 30px
+    }
+
+    #footer-logo {
+        text-align: center
+    }
+
+    #footer-logo-image {
+        width: 200px;
+        -webkit-filter: drop-shadow(-3px 5px 2px rgba(0, 0, 0, 1));
+        filter: drop-shadow(-3px 5px 2px rgba(0, 0, 0, 1));
+        margin-top: 5px;
+    }
+
+    #footer-copyright {
+        color: #fff;
+        font-size: 13px;
+        width: 200px;
+        margin: auto
+    }
+
+    #footer-copyright-top {
+        text-align: center;
+        margin-top: 12px;
+        opacity: .4;
+    }
+
+    #footer-copyright-bottom {
+        text-align: center;
+        display: block;
+        direction: ltr;
+        margin-top: 3px;
+        opacity: .4;
+    }
+
+
+</style>
+
+<div id="footer">
+    <div class="flex-display flex-wrap justify-content-s-ar" id="footer-bar">
+        <div id="social-media">
+            <h3>
+                در تمامی روزهای هفته با ما در
+                ارتباط باشید </h3>
+            <di class="social-media-place flex-display flex-wrap justify-content-s-bet">
+                <span class="social-media-icon"></span>
+                <div class="social-media-color" style="background:#1BD741"><span style="letter-spacing:0">واتساپ</span>
+                    <span>: 09121965702</span></div>
+            </di>
+
+            <div class="social-media-place flex-display flex-wrap justify-content-s-bet">
+                <span class="social-media-icon" style="background: url(images/40.png) no-repeat 0 -108px"></span>
+                <div class="social-media-color" style="background:#039BE5 "><span
+                        style="letter-spacing:0;">تلگرام</span> <span>: shivaway.ir@</span></div>
+            </div>
+
+            <div class="social-media-place flex-display flex-wrap justify-content-s-bet">
+                <span class="social-media-icon" style="background: url(images/40.png) no-repeat 0 -54px"></span>
+                <div class="social-media-color" style="background:#6D47C5 "><span style="letter-spacing:0">گپ</span>
+                    <span>: 09121965702</span></div>
+            </div>
+
+            <div class="social-media-place flex-display flex-wrap justify-content-s-bet">
+                <span class="social-media-icon" style="background: url(images/40.png) no-repeat 0 -165px"></span>
+                <div class="social-media-color" style="background:#D32E2A;margin-bottom: 0 ">shivaway.ir@gmail.com</div>
+            </div>
+
+        </div>
+
+
+        <div id="useful-link">
+            <div id="useful-link-holder">
+                <ul>
+                    <li><h4>لینک های مفید</h4></li>
+                    <li>
+                        <a class="flex-display align-items-center" href="#">
+                            <span class="useful-link-arrow"></span>
+                            <span class="useful-link-title">ورود به سایت</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="flex-display align-items-center" href="#">
+                            <span class="useful-link-arrow"></span>
+                            <span class="useful-link-title">عضویت</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="flex-display align-items-center" href="#">
+                            <span class="useful-link-arrow"></span>
+                            <span class="useful-link-title">صفحه اصلی</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="flex-display align-items-center" href="#">
+                            <span class="useful-link-arrow"></span>
+                            <span class="useful-link-title">محصولات</span>
+                        </a>
+                    </li>
+
+                    <li style="margin-bottom: 0">
+                        <a class="flex-display align-items-center" href="#">
+                            <span class="useful-link-arrow"></span>
+                            <span class="useful-link-title">تماس با ما</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-radius-10px" id="about-us">
+            <div id="about-us-back"></div>
+            <h4>درباره ما</h4>
+            <span id="about-us-gap"></span>
+            <div id="about-us-mtn">
+                <p>ما در سایت شیوا وی قصد داریم تا با روش های جدید ، جذاب و خلاقانه یادگیری زبان انگلیسی را برای علاقه
+                    مندان آسون تر کنیم و به اونها کمک کنیم تا در سریع ترین زمان ممکن بهترین نتیجه رو بگیرن ... ممنون از
+                    اینکه در این مسیر ما رو همراهی می کنید 😇🙏
+                </p>
+            </div>
+        </div>
+
+
+        <div id="footer-logo">
+            <img id="footer-logo-image" src="images/logo-footer.svg">
+            <div id="footer-copyright">
+                <div id="footer-copyright-top">تمامی حقوق این سایت برای مجموعه «شیوا وی» محفوظ می باشد.</div>
+                <span id="footer-copyright-bottom">Copyright © 2021, All rights reserved.</span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<style>
+
+    /*<!--------------------header-media-queries----------------------->*/
+
+    @media only screen and (min-width: 1400px) {
+        #header-bar {
+            max-width: 1266px
+        }
+
+        #footer-bar {
+            max-width: 1330px;
+            justify-content: space-between;
+            -webkit-justify-content: space-between;
+            -moz-justify-content: space-between;
+        }
+
+        #social-media, #about-us {
+            margin-right: 2.2rem;
+        }
+    }
+
+    @media only screen and (max-width: 991px) {
+
+        header {
+            padding: 0 20px 0 6px;
+        }
+
+        .nav-left-delete-li {
+            display: none !important;
+        }
+
+        .menu-open {
+            display: block !important;
+        }
+
+        header nav {
+            position: fixed !important;
+            top: 0;
+            z-index: 6000 !important;
+            right: -240px;
+            width: 240px;
+            height: 100vh !important;
+            background: #AB47BC;
+            -webkit-transition: all ease .5s;
+            -moz-transition: all ease .5s;
+            -ms-transition: all ease .5s;
+            -o-transition: all ease .5s;
+            transition: all ease .5s;
+            border-left: 2px solid rgba(0, 0, 0, .25);
+            overflow-y: auto !important;
+        }
+
+        header nav.active {
+            right: 0 !important;
+        }
+
+        header nav ul {
+            display: block !important;
+        }
+
+        .menu-close {
+            display: block !important;
+        }
+
+        .delete-li {
+            display: block !important;
+        }
+
+        header nav ul li a::after {
+            top: 19px;
+            right: 41px;
+        }
+
+        header nav ul li a {
+            border-bottom: 1px solid #8E24AA;
+            text-align: right;
+            padding: 0 91px 0 0;
+        }
+
+        header nav ul .nav-li-1 {
+            margin-top: 60px;
+            border-top: 1px solid #8E24AA;
+        }
+
+        .bubbles {
+            margin-right: 0;
+            padding: 0 5px 0 10px;
+        }
+
+        header .add-to-cart-bag a {
+            margin: 12px 2px 0 4px;
+        }
+
+    }
+
+    @media only screen and (max-width: 400px) {
+
+        header nav {
+            right: -220px;
+            width: 220px;
+        }
+
+        header nav ul li a::after {
+            top: 19px;
+            right: 35px;
+        }
+
+        header nav ul li a {
+            border-bottom: 1px solid #8E24AA;
+            text-align: right;
+            padding: 0 78px 0 0;
+        }
+
+    }
+
+    @media only screen and (max-width: 290px) {
+
+        header {
+            padding: 0 14px 0 0;
+        }
+
+        .bubbles {
+            padding: 0 2px 0 10px;
+        }
+
+    }
+
+    /*<!--------------------header-media-queries----------------------->*/
+
+    /*<!--------------------footer-media-queries----------------------->*/
+
+    @media only screen and (max-width: 1187px) {
+        #social-media, #about-us {
+            margin-right: 0;
+        }
+
+        #social-media {
+            padding-right: 0
+        }
+
+        #footer-logo {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 950px) {
+        #social-media, #about-us {
+            width: 350px;
+
+        }
+
+        #footer-logo {
+            width: 258px;
+        }
+    }
+
+    @media only screen and (max-width: 740px) {
+        #social-media, #about-us {
+            width: 312px;
+
+        }
+
+        #social-media {
+            padding-right: .5rem
+        }
+
+        #footer-logo, #useful-link {
+            width: 500px;
+        }
+
+    }
+
+    @media only screen and (max-width: 520px) {
+
+        #footer-logo, #useful-link {
+            width: 258px;
+        }
+
+    }
+
+    @media only screen and (max-width: 325px) {
+
+        #social-media, #about-us {
+            width: 100%;
+
+        }
+
+        #social-media h3 {
+            text-align: center;
+            padding: 0 5px;
+            line-height: 28px;
+        }
+
+        #about-us {
+            border-radius: unset;
+        }
+
+        #footer-logo, #useful-link {
+            width: 100%;
+        }
+
+    }
+
+    @media only screen and (max-width: 305px) {
+        .social-media-place {
+            justify-content: space-around !important;
+            -webkit-justify-content: space-around !important;
+            -moz-justify-content: space-around !important;
+        }
+
+        .social-media-icon {
+
+            margin: 0 2rem 1rem 2rem;
+        }
+
+    }
+
+    /*<!--------------------footer-media-queries----------------------->*/
+
+</style>
+
+
+<!----------x--------footer-------x--------->
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+
+    var nav = $('nav');
+    var menuOpen = $('.menu-open');
+    var menuClose = $('.menu-close');
+    $(document).ready(function () {
+        menuOpen.on("click", function () {
+            nav.addClass('active')
+        });
+        menuClose.on("click", function () {
+            nav.removeClass('active')
+        });
+    });
+
+
+    // ------------------------------------------------------------
+
+    jQuery(document).ready(function ($) {
+        var bArray = [];
+        var sArray = [4, 5, 6, 7];
+        for (var i = 0; i < $('.bubbles').width(); i++) {
+            bArray.push(i);
+        }
+
+        function randomValue(arr) {
+            return arr[Math.floor(Math.random() * arr.length)];
+        }
+
+        setInterval(function () {
+            var size = randomValue(sArray);
+            $('.bubbles').append('<div class="individual-bubble" style="left: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px;"></div>');
+
+            $('.individual-bubble').animate({
+                    'bottom': '100%',
+                    'opacity': '-=0.7'
+                }, 3000, function () {
+                    $(this).remove()
+                }
+            );
+
+        }, 350);
+    });
+
+    // <!-----------------------persian-num-js------------------------>
+
+
+    $(document).ready(function () {
+
+        $('*').persiaNumber();
+
+    });
+
+    //
+    <!-----------x-----------persian-num-js------------x----------->
+
+
+
+    // <!------------------------aos-js------------------------->
+    AOS.init({
+        once: true,
+        offset: 200,
+        duration: 800
+    })
+    ;
+    //
+    <!-------------x----------aos-js----------x-------------->
+
+
+    var infoBtnSW = $('#comment-form').find('.mosh-change-border');
+    $(function () {
+        infoBtnSW.on("click", function (e) {
+            infoBtnSW.removeClass('mosh-new-border');
+            $(this).addClass('mosh-new-border');
+            e.stopPropagation()
+        });
+        $(document).on("click", function (e) {
+            if ($(e.target).is(infoBtnSW) === false) {
+                infoBtnSW.removeClass('mosh-new-border');
+            }
+        });
+    });
+
+
+</script>
+
+</body>
+</html>
